@@ -17,17 +17,13 @@ function App() {
 
   }
 
-  const test = () => {
-      console.log(form.city)
-  }
-
   return (
     <div className="App">
           <div className="form">
             <form method="POST">
               <label htmlFor="city">Please specify your city</label>
               <input ref={cityRef} type="text" id="city" name="city" onChange={e => enterCity(e)}/>
-              <button onClick={test}  type="button" id="run">Go!</button>
+              <button type="button" id="run">Go!</button>
             </form>
           </div>
 
